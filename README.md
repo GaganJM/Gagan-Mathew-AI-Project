@@ -24,6 +24,19 @@ before touching any code that handles customer documents or data.
 This is a prototype/demo, not a production deployment — see
 [Status & Open Decisions](#status--open-decisions) below.
 
+## Demo
+
+Two screen recordings showing the full flow from both sides:
+
+- **[Customer experience](docs/demo/customer-experience.mp4)** — the input
+  side: a customer going through the portal, selecting a flow, and
+  uploading documents.
+- **[Bank experience](docs/demo/bank-experience.mp4)** — the output side:
+  what the reviewer receives and sees as a result of that submission
+  (the summary email, the Excel tracker, the analysis).
+
+(Click either link to view/play the video in GitHub's file viewer.)
+
 ## What it does
 
 **Open an Account** — a new corporate customer uploads Bank Forms, Entity
