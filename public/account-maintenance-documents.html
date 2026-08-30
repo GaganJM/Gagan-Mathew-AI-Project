@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Upload Documents | RAKBank Wholesale Banking</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html"><img class="logo" src="rakbank-logo.png" alt="RAKBank" /></a>
+    <span class="portal-label">Wholesale Banking Portal</span>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro">
+    <div class="container">
+      <a class="back-link" href="account-maintenance.html">← Back</a>
+      <p class="eyebrow">Account Maintenance</p>
+      <h1>Upload Required Documents</h1>
+      <p class="hero-sub-dark" id="selected-changes-line">
+        Based on the change(s) you selected, please upload the following documents.
+      </p>
+    </div>
+  </section>
+
+  <section class="upload-sections">
+    <div class="container">
+
+      <div class="doc-section" id="maintenance-documents" data-section-name="Documents">
+        <div class="doc-section-header">
+          <h2>Required Documents</h2>
+          <span class="section-progress" data-progress-for="maintenance-documents">0 / 0 uploaded</span>
+        </div>
+        <p class="section-desc">Documents required for the change(s) you selected. Each is listed once even if needed for more than one change.</p>
+
+        <div class="doc-list" data-mandatory-list="maintenance-documents">
+          <!-- rows injected by JS -->
+        </div>
+
+        <div class="doc-list optional" data-optional-list="maintenance-documents">
+          <!-- rows injected by JS -->
+        </div>
+
+        <button type="button" class="add-optional-btn" data-add-optional="maintenance-documents" id="add-optional-btn">+ Add optional document</button>
+      </div>
+
+      <div class="submit-bar">
+        <p class="submit-note" data-submit-note>Upload all mandatory documents to enable submission.</p>
+        <button type="button" class="submit-btn" id="submit-maintenance" disabled>Submit Request</button>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>This portal is restricted to authorized RAKBank wholesale banking clients. All documents submitted here are treated as confidential.</p>
+  </div>
+</footer>
+
+<script src="account-maintenance-documents.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Account Maintenance | RAKBank Wholesale Banking</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html"><img class="logo" src="rakbank-logo.png" alt="RAKBank" /></a>
+    <span class="portal-label">Wholesale Banking Portal</span>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro">
+    <div class="container">
+      <a class="back-link" href="account-maintenance-identify.html">← Back</a>
+      <p class="eyebrow">Account Maintenance</p>
+      <h1>What changes would you like to make?</h1>
+      <p class="hero-sub-dark" id="account-context-line">
+        Select the type of change below. If you need to make more than one
+        type of change to your account, click the plus box to add another.
+      </p>
+    </div>
+  </section>
+
+  <section class="upload-sections">
+    <div class="container">
+      <div class="doc-section">
+
+        <div class="change-grid" id="change-grid">
+          <div class="change-card" data-change-card>
+            <label class="contact-field-label" style="margin-top:0;">Type of change</label>
+            <select class="contact-input change-select" data-change-select>
+              <option value="" selected disabled>Select a change type</option>
+            </select>
+          </div>
+          <button type="button" class="add-change-card" id="add-change-card" aria-label="Add another change type">
+            <span aria-hidden="true">+</span>
+          </button>
+        </div>
+
+        <p class="section-desc" style="margin-top:20px;">
+          If your type of profile change is not listed above, kindly contact
+          <a class="doc-form-link" href="mailto:wbg-onboarding@rakbank.ae">wbg-onboarding@rakbank.ae</a>.
+        </p>
+
+        <div class="submit-bar">
+          <p class="submit-note" data-submit-note>Select at least one change type to continue.</p>
+          <button type="button" class="submit-btn" id="continue-btn" disabled>Continue</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>This portal is restricted to authorized RAKBank wholesale banking clients. All documents submitted here are treated as confidential.</p>
+  </div>
+</footer>
+
+<script src="account-maintenance.js"></script>
+</body>
+</html>

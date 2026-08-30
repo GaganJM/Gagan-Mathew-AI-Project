@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Application Submitted | RAKBank Wholesale Banking</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html"><img class="logo" src="rakbank-logo.png" alt="RAKBank" /></a>
+    <span class="portal-label">Wholesale Banking Portal</span>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Corporate Account Opening</p>
+      <h1>Application Submitted Successfully</h1>
+      <p class="hero-sub-dark">
+        Thank you. Your documents have been received and your application is
+        now with our review team.
+      </p>
+    </div>
+  </section>
+
+  <section class="upload-sections">
+    <div class="container">
+      <div class="doc-section" style="text-align:center;">
+        <p class="section-desc" style="margin-bottom:4px;">Your reference number</p>
+        <div id="reference-number" style="font-size:32px;font-weight:700;color:var(--black-dark);letter-spacing:0.04em;">—</div>
+        <p class="section-desc" id="company-name-line" style="margin-top:12px;"></p>
+        <p class="section-desc">
+          Please keep this reference number for any future correspondence
+          about this application.
+        </p>
+        <a class="option-cta" href="index.html" style="display:inline-block;margin-top:12px;">← Back to home</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>This portal is restricted to authorized RAKBank wholesale banking clients. All documents submitted here are treated as confidential.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var ref = params.get("ref");
+    var company = params.get("company");
+    document.getElementById("reference-number").textContent = ref || "Unavailable";
+    if (company) {
+      document.getElementById("company-name-line").textContent = company;
+    }
+  })();
+</script>
+</body>
+</html>

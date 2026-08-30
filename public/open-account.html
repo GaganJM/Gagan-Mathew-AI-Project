@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Open an Account | RAKBank Wholesale Banking</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html"><img class="logo" src="rakbank-logo.png" alt="RAKBank" /></a>
+    <span class="portal-label">Wholesale Banking Portal</span>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro">
+    <div class="container">
+      <a class="back-link" href="index.html">← Back</a>
+      <p class="eyebrow">Corporate Account Opening</p>
+      <h1>Upload Required Documents</h1>
+      <p class="hero-sub-dark">
+        Complete each section below. Mandatory documents must be provided
+        before the application can be submitted. Optional documents can be
+        added if applicable to your entity.
+      </p>
+    </div>
+  </section>
+
+  <section class="upload-sections">
+    <div class="container">
+
+      <div class="doc-section" id="bank-forms" data-section-name="Bank Forms">
+        <div class="doc-section-header">
+          <h2>1. Bank Forms</h2>
+          <span class="section-progress" data-progress-for="bank-forms">0 / 3 uploaded</span>
+        </div>
+        <p class="section-desc">Standard bank forms required for every corporate account application.</p>
+
+        <div class="doc-list" data-mandatory-list="bank-forms">
+          <!-- mandatory rows injected by JS -->
+        </div>
+
+        <div class="doc-list optional" data-optional-list="bank-forms">
+          <!-- optional rows injected by JS -->
+        </div>
+
+        <button type="button" class="add-optional-btn" data-add-optional="bank-forms">+ Add optional document</button>
+      </div>
+
+      <div class="doc-section" id="entity-documents" data-section-name="Entity Documents">
+        <div class="doc-section-header">
+          <h2>2. Entity Documents</h2>
+          <span class="section-progress" data-progress-for="entity-documents">0 / 6 uploaded</span>
+        </div>
+        <p class="section-desc">Documents confirming the legal existence, structure, and signatories of the entity.</p>
+        <p class="residency-note">If the entity or its shareholders are not incorporated in the UAE, their respective documents need to be MOFA attested or verifiable via the relevant government website.</p>
+
+        <div class="doc-list" data-mandatory-list="entity-documents">
+          <!-- mandatory rows injected by JS -->
+        </div>
+
+        <div class="doc-list optional" data-optional-list="entity-documents">
+          <!-- optional rows injected by JS -->
+        </div>
+
+        <button type="button" class="add-optional-btn" data-add-optional="entity-documents">+ Add optional document</button>
+      </div>
+
+      <div class="doc-section" id="ubo-documents" data-section-name="UBO Documents">
+        <div class="doc-section-header">
+          <h2>3. UBO Documents</h2>
+          <span class="section-progress" data-progress-for="ubo-documents">0 / 3 uploaded</span>
+        </div>
+        <p class="section-desc">Identity and address documents for each Ultimate Beneficial Owner (UBO).</p>
+
+        <div class="doc-list" data-mandatory-list="ubo-documents">
+          <!-- mandatory rows injected by JS -->
+        </div>
+
+        <div class="doc-list optional" data-optional-list="ubo-documents">
+          <!-- optional rows injected by JS -->
+        </div>
+
+        <button type="button" class="add-optional-btn" data-add-optional="ubo-documents">+ Add optional document</button>
+      </div>
+
+      <div class="submit-bar">
+        <p class="submit-note" data-submit-note>Upload all mandatory documents to enable submission.</p>
+        <button type="button" class="submit-btn" id="submit-application" disabled>Submit Application</button>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>This portal is restricted to authorized RAKBank wholesale banking clients. All documents submitted here are treated as confidential. This is a prototype — documents are not yet transmitted or stored.</p>
+  </div>
+</footer>
+
+<script src="open-account.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Flask>=3.0,<4
+python-dotenv>=1.0,<2
+anthropic>=0.40,<1
+openpyxl>=3.1,<4
+google-auth>=2.30,<3
+google-auth-oauthlib>=1.2,<2
+google-api-python-client>=2.130,<3
+xhtml2pdf>=0.2.16,<0.3
+pypdf>=5.0,<7

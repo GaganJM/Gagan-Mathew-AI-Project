@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Information | RAKBank Wholesale Banking</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html"><img class="logo" src="rakbank-logo.png" alt="RAKBank" /></a>
+    <span class="portal-label">Wholesale Banking Portal</span>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Corporate Account Opening</p>
+      <h1>Contact Information</h1>
+      <p class="hero-sub-dark" id="company-name-line">
+        Documents received. Please provide a contact email and phone number so we can reach you about this application.
+      </p>
+    </div>
+  </section>
+
+  <section class="upload-sections">
+    <div class="container">
+      <div class="doc-section">
+
+        <p class="contact-field-label">Contact email address(es)</p>
+        <div id="email-fields">
+          <div class="contact-field-row" data-email-row>
+            <input type="email" class="contact-input" data-email-input placeholder="name@company.com" required />
+          </div>
+        </div>
+        <button type="button" class="add-optional-btn" id="add-email-btn">+ Add another email</button>
+
+        <p class="contact-field-label">Contact number(s)</p>
+        <div id="phone-fields">
+          <div class="contact-field-row" data-phone-row>
+            <input type="tel" class="contact-input" data-phone-input placeholder="e.g. +971 4 123 4567" required />
+          </div>
+        </div>
+        <button type="button" class="add-optional-btn" id="add-phone-btn">+ Add another phone number</button>
+
+        <div class="submit-bar">
+          <p class="submit-note" data-submit-note>Provide at least one email address and a contact number to continue.</p>
+          <button type="button" class="submit-btn" id="continue-btn">Continue</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>This portal is restricted to authorized RAKBank wholesale banking clients. All documents submitted here are treated as confidential.</p>
+  </div>
+</footer>
+
+<script src="contact-info.js"></script>
+</body>
+</html>

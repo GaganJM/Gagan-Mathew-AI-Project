@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Account Maintenance | RAKBank Wholesale Banking</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html"><img class="logo" src="rakbank-logo.png" alt="RAKBank" /></a>
+    <span class="portal-label">Wholesale Banking Portal</span>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro">
+    <div class="container">
+      <a class="back-link" href="index.html">← Back</a>
+      <p class="eyebrow">Account Maintenance</p>
+      <h1>Identify Your Account</h1>
+      <p class="hero-sub-dark">
+        Enter your company name and either your CIF number or account number
+        so we can match this request to the right account.
+      </p>
+    </div>
+  </section>
+
+  <section class="upload-sections">
+    <div class="container">
+      <div class="doc-section">
+
+        <p class="contact-field-label" style="margin-top:0;">Company Name</p>
+        <div class="contact-field-row">
+          <input type="text" class="contact-input" id="company-name-input" placeholder="Registered company name" required />
+        </div>
+
+        <p class="contact-field-label">Account Number or CIF Number</p>
+        <div class="contact-field-row">
+          <input type="text" class="contact-input" id="identifier-input" inputmode="numeric" placeholder="7-digit CIF number or 13-digit account number" required />
+        </div>
+
+        <div class="submit-bar">
+          <p class="submit-note" data-submit-note>Enter your company name and account/CIF number to continue.</p>
+          <button type="button" class="submit-btn" id="continue-btn">Continue</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>This portal is restricted to authorized RAKBank wholesale banking clients. All documents submitted here are treated as confidential.</p>
+  </div>
+</footer>
+
+<script src="account-maintenance-identify.js"></script>
+</body>
+</html>
